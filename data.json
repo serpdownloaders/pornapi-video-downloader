@@ -1,0 +1,217 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/pornapi-downloader",
+  "serply_link": "https://serp.ly/pornapi-downloader",
+  "app_name": "Pornapi Video Downloader",
+  "short_description": "Download & Save Pornapi Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Downloader for Porn API is a browser extension built for Porn API watch pages that use iframe-based video embedding and multi-host media delivery. Instead of assuming a single static video file, it follows the actual network-style handoff path across Porn API, related media hosts, and CDN endpoints to expose the underlying MP4 or HLS stream. The extension is designed for users who want a browser-first workflow to save publicly accessible videos they have permission to download.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/pornapi-downloader-fullscreen-01-a1a332567b.webp",
+    "https://apps.serp.co/media/optimized-products/pornapi-downloader-fullscreen-02-c7b93f4555.webp",
+    "https://apps.serp.co/media/optimized-products/pornapi-downloader-fullscreen-03-66fd7e5a80.webp",
+    "https://apps.serp.co/media/optimized-products/pornapi-downloader-fullscreen-04-3d4a72b97d.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "What makes Porn API different from a basic one-page video site?",
+      "answer": "Porn API uses an iframe-driven watch page with media handoff across several domains, so the workflow requires network-aware detection rather than a simple page scrape."
+    },
+    {
+      "question": "What URL pattern should I use for testing?",
+      "answer": "The core route is /watch/{slug}, with a verified example at ``."
+    },
+    {
+      "question": "What stream types does the extension support?",
+      "answer": "The extension is designed for MP4 and HLS (m3u8) streams exposed through Porn API's delivery flow."
+    },
+    {
+      "question": "Is the target verified for this extension?",
+      "answer": "Yes. The target bucket is marked as verified and ready, with a tested example URL available."
+    },
+    {
+      "question": "Can I rely on this for production use?",
+      "answer": "The target row is verified, but the packet also includes notes about stale configuration files and generated stub status. Use the extension with the understanding that some edge cases may not yet be fully validated."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Downloader for Porn API is a browser extension built for Porn API watch pages that use iframe-based video embedding and multi-host media delivery. Instead of assuming a single static video file, it follows the actual network-style handoff path across Porn API, related media hosts, and CDN endpoints to expose the underlying MP4 or HLS stream. The extension is designed for users who want a browser-first workflow to save publicly accessible videos they have permission to download."
+    },
+    {
+      "name": "",
+      "description": "Archiving content you have permission to download for personal reference"
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Works with Porn API /watch/{slug} route patterns",
+    "Detects media across multiple domains including CDN hosts",
+    "Supports both MP4 and HLS (m3u8) stream formats",
+    "Iframe-aware detection for embedded player pages",
+    "Verified target row with honest readiness caveats",
+    "Porn API-specific detection for /watch/{slug} watch pages",
+    "Iframe-aware media tracking for embedded player workflows",
+    "Multi-host handoff support across Porn API, related media domains, and CDN endpoints",
+    "MP4 stream detection for direct video file downloads",
+    "HLS (m3u8) stream detection for adaptive bitrate playback",
+    "Verified target row with a tested example URL",
+    "Honest readiness caveats included in documentation",
+    "Browser-first workflow with no additional software required"
+  ],
+  "content": {
+    "why": [
+      "Porn API uses an iframe-based page structure where the actual video content may live on a different domain than the watch page you are browsing. The media can move across multiple hosts before reaching your browser, making it difficult to simply copy a URL or inspect the page source. Generic downloaders that assume a single video file often fail on these pages because they do not follow the network handoff path.",
+      "This extension is built specifically for Porn API's architecture. It works with the /watch/{slug} route pattern, detects media across the related domains and CDN hosts involved in delivery, and surfaces the underlying MP4 or HLS stream. The target row is verified and ready, while the product story honestly acknowledges that some configuration files are still in development."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open Porn API and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Navigate to a Porn API watch page using the /watch/{slug} URL pattern, such as ``.",
+      "Wait for the page to fully load, including the iframe-based embedded player.",
+      "Start video playback so the media handoff path becomes visible.",
+      "Open the extension popup from your browser toolbar.",
+      "Allow the extension to detect the media stream across the involved domains.",
+      "Review the detected stream information, including format and estimated quality.",
+      "Select the download option to begin saving the video.",
+      "Choose a local destination for the final MP4 file."
+    ],
+    "supported_formats": [
+      "Input: MP4 and HLS (m3u8) streams exposed through Porn API's iframe-driven watch pages, with media handoff across Porn API, related media domains, and CDN hosts",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "Users who browse Porn API watch pages and want to save videos for offline viewing",
+      "People who understand that Porn API uses iframe-based embedding and multi-host media delivery",
+      "Users who prefer a browser extension over standalone downloading software",
+      "Anyone who wants to test a verified target downloader before committing to a paid solution"
+    ],
+    "use_cases": [
+      "Saving a Porn API video to watch offline without an internet connection",
+      "Archiving content you have permission to download for personal reference",
+      "Capturing media that is delivered through an iframe player on a watch page",
+      "Following the media handoff path across multiple domains to access the underlying stream",
+      "Testing the extension with a verified target URL before exploring other content"
+    ],
+    "troubleshooting": [
+      "The extension does not detect any media on the page Make sure you are on a Porn API watch page that follows the /watch/{slug} URL pattern. Start video playback so the media handoff path becomes visible to the extension.",
+      "The download fails or produces a broken file Try a different video to confirm the issue is not specific to one piece of content. Check your internet connection and ensure the media stream completed loading before you initiated the download.",
+      "The popup does not open Verify the extension is installed correctly from the latest release. Try refreshing the Porn API page and clicking the extension icon again.",
+      "The detected stream quality is lower than expected Porn API may deliver different quality levels depending on your connection and the specific video. The extension surfaces whatever stream the page exposes.",
+      "The extension behaves differently than expected Porn API's configuration files are still being refined, and some edge cases may not yet be fully validated. Report any unexpected behavior through GitHub Issues."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported Porn API page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Porn API may use multiple domains for media delivery, including CDN hosts that change over time",
+      "The extension is designed for the /watch/{slug} route pattern and may not work on other Porn API pages"
+    ],
+    "about": [
+      "Porn API is a video platform that delivers adult content through iframe-based watch pages and multi-host media delivery. This extension is built to work with Porn API's specific architecture, offering a browser-first way to save videos from its watch pages while respecting the platform's domain handoff patterns."
+    ]
+  },
+  "serpx_link": "https://serpx.link/pornapi-downloader",
+  "github_topics": [
+    "pornapi-download",
+    "pornapi-downloader",
+    "pornapi-video-downloader",
+    "pornapi-video-downloader-online",
+    "pornapi-video-downloader-mac",
+    "pornapi-video-downloader-window",
+    "pornapi-video-downloader-free",
+    "pornapi-video-downloader-extension",
+    "pornapi-video-downloader-app",
+    "pornapi-video-downloader-chrome",
+    "pornapi-video-downloader-from-url",
+    "how-to-download-pornapi-videos",
+    "how-to-download-pornapi-videos-mac",
+    "how-to-download-pornapi-videos-windows",
+    "how-to-download-pornapi-videos-online",
+    "how-to-download-pornapi-videos-free",
+    "how-to-download-from-pornapi",
+    "how-to-download-videos-from-pornapi",
+    "download-pornapi-videos",
+    "pornapi-video-tutorial",
+    "save-pornapi-videos",
+    "pornapi-video-content-saver",
+    "how-to-download-pornapi-videos-for-free"
+  ],
+  "hashtags": [
+    "#PornapiDownload",
+    "#PornapiDownloader",
+    "#PornapiVideoDownloader",
+    "#PornapiVideoDownloaderOnline",
+    "#PornapiVideoDownloaderMac",
+    "#PornapiVideoDownloaderWindow",
+    "#PornapiVideoDownloaderFree",
+    "#PornapiVideoDownloaderExtension",
+    "#PornapiVideoDownloaderApp",
+    "#PornapiVideoDownloaderChrome",
+    "#PornapiVideoDownloaderFromURL",
+    "#HowToDownloadPornapiVideos",
+    "#HowToDownloadPornapiVideosMac",
+    "#HowToDownloadPornapiVideosWindows",
+    "#HowToDownloadPornapiVideosOnline",
+    "#HowToDownloadPornapiVideosFree",
+    "#HowToDownloadFromPornapi",
+    "#HowToDownloadVideosFromPornapi",
+    "#DownloadPornapiVideos",
+    "#PornapiVideoTutorial",
+    "#SavePornapiVideos",
+    "#PornapiVideoContentSaver",
+    "#HowToDownloadPornapiVideosForFree"
+  ],
+  "youtube_tags": [
+    "Pornapi Download",
+    "Pornapi Downloader",
+    "Pornapi Video Downloader",
+    "Pornapi Video Downloader Online",
+    "Pornapi Video Downloader Mac",
+    "Pornapi Video Downloader Window",
+    "Pornapi Video Downloader Free",
+    "Pornapi Video Downloader Extension",
+    "Pornapi Video Downloader App",
+    "Pornapi Video Downloader Chrome",
+    "Pornapi Video Downloader From URL",
+    "How To Download Pornapi Videos",
+    "How To Download Pornapi Videos Mac",
+    "How To Download Pornapi Videos Windows",
+    "How To Download Pornapi Videos Online",
+    "How To Download Pornapi Videos Free",
+    "How To Download From Pornapi",
+    "How To Download Videos From Pornapi",
+    "Download Pornapi Videos",
+    "Pornapi Video Tutorial",
+    "Save Pornapi Videos",
+    "Pornapi Video Content Saver",
+    "How To Download Pornapi Videos For Free"
+  ]
+}
